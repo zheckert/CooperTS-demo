@@ -2,9 +2,12 @@ import React from "react";
 
 class App extends React.Component {
   render() {
+    const helloWorld: string[] = ["Hello World"];
     return (
       <div>
-        <h1>Hello World</h1>
+        {helloWorld.map((hw) => (
+          <h1>{hw}</h1>
+        ))}
       </div>
     );
   }
