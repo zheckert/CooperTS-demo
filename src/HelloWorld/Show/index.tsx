@@ -1,13 +1,19 @@
-import React from "react";
+import * as React from "react";
+import ShowHelloWorldStore from "./Store";
 
-class HelloWorld extends React.Component {
+interface Props {
+  message: string;
+}
+
+class HelloWorld extends React.Component<Props> {
+  store = new ShowHelloWorldStore();
+  componentDidMount() {
+    this.store.load(this.props.message);
+  }
   render() {
-    const helloWorld: string[] = ["Hello World"];
     return (
       <div>
-        {helloWorld.map((hello) => (
-          <h1>{hello}</h1>
-        ))}
+        <h1>Hello World</h1>
       </div>
     );
   }
