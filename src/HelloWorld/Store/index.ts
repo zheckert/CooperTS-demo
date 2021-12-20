@@ -1,11 +1,11 @@
 import { action, computed, observable } from "mobx";
-import { HelloWorldResource } from "../../Types";
+import { HelloWorldResource } from "../Types";
 import { error, loading, ready, State, waiting } from "./Types";
 import {
   just,
   Maybe,
   nothing,
-} from "../../../../festive-possum/packages/maybeasy/src";
+} from "../../../festive-possum/packages/maybeasy/src";
 
 class ShowHelloWorldStore {
   @observable

@@ -1,4 +1,4 @@
-import { HelloWorldResource } from "../../Types";
+import { HelloWorldResource } from "../Types";
 
 interface Waiting {
   kind: "waiting";
