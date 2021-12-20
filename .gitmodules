@@ -1,3 +1,6 @@
 [submodule "CooperTS"]
 	path = CooperTS
 	url = https://github.com/execonline-inc/CooperTS
+[submodule "festive-possum"]
+	path = festive-possum
+	url = https://github.com/kofno/festive-possum
